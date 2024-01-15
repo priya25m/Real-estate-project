@@ -43,7 +43,7 @@ const Header = () => {
           <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
             <NavLink to="/properties">Properties</NavLink>
 
-            <a href="priya1072.be21@chitkara.edu.in">Contact</a>
+            <a href="mailto:priya1072.be21@chitkara.edu.in">Contact</a>
 
             {/* add property  */}
             <div onClick={handleAddPropertyClick}>Add Property</div>

@@ -9,9 +9,7 @@ import UserDetailContext from "../../context/UserDetailsContext";
 const Favourites = () => {
   const { data, isError, isLoading } = useProperties();
   const [filter, setFilter] = useState("");
-  const {
-    userDetails: { Favourites },
-  } = useContext(UserDetailContext);
+  const { userDetails: favourites } = useContext(UserDetailContext);
 
   if (isError) {
     return (

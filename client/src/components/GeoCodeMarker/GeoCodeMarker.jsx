@@ -4,7 +4,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
-import * as ELG from "esri-leaflet-geocoder";
+import geocode from "esri-leaflet-geocoder";
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
@@ -18,7 +18,7 @@ const GeoCodeMarker = ({ address }) => {
   const [position, setPosition] = useState([60, 19]);
 
   useEffect(() => {
-    ELG.geocode()
+    geocode()
       .text(address)
       .run((err, results, response) => {
         if (results?.results?.length > 0) {

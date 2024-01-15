@@ -1,12 +1,11 @@
 import React from "react";
 import { useForm } from "@mantine/form";
 import { validateString } from "../../utils/common";
-import { Button, Flex, Group, Select, TextInput } from "@mantine/core";
-import useCountries from "../../hooks/useCountries";
+import { Button, Group, Select, TextInput } from "@mantine/core";
+// import useCountries from "../../hooks/useCountries";
 import Map from "../Map/Map";
-import { getAllBookings } from "../../utils/api";
 const AddLocation = ({ propertyDetails, setPropertyDetails, nextStep }) => {
-  const { getAll } = useCountries();
+  // const { getAll } = useCountries();
 
   const form = useForm({
     initialValues: {
@@ -55,7 +54,7 @@ const AddLocation = ({ propertyDetails, setPropertyDetails, nextStep }) => {
             label="Country"
             clearable
             searchable
-            data={getAll()}
+            data={[]}
             {...form.getInputProps("country", { type: "input" })}
           />
 
