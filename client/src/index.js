@@ -12,7 +12,7 @@ root.render(
       domain="dev-hfwz6oy8w6lyzulf.us.auth0.com"
       clientId="QEXG1jmwtmuSKcGJlBrzTQFg1tBwsCLu"
       authorizationParams={{
-        redirect_url: "http://localhost:3000",
+        redirect_url: "https://real-estate-project-fzdi.vercel.app/",
       }}
       audience="http://localhost:8000"
       scope="openid profile email"
